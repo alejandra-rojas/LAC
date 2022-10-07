@@ -17,10 +17,6 @@ nav {
   font-size: 16px;
 }
 
-body {
-  background-color: black;
-}
-
 /* Mobile Styles */
 
 /* Header Elements */
@@ -128,7 +124,7 @@ button {
     " b b b b b b b b";
 }
 
-.content-main {
+.main-content {
   grid-area: m;
   padding: 1rem 0.3rem 1rem 0.5rem;
   display: flex;
@@ -214,7 +210,7 @@ footer {
     grid-template-columns: 55px minmax(4fr, 800px) 55px;
   }
 
-  .content-main {
+  .main-content {
     padding: 3rem 4rem;
   }
 }
@@ -323,7 +319,7 @@ footer {
       " b b b b b b b b";
   }
 
-  .content-main {
+  .main-content {
     grid-area: m;
     display: flex;
     flex-direction: column;
