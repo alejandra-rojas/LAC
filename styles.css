@@ -15,13 +15,17 @@ html,
 nav {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
-/* Mobile Styles */
+/* MOBILE STYLES */
 
 /* Header Elements */
 
 header {
+  position: sticky;
+  top: 0;
+
   background-color: var(--green);
   display: flex;
   align-items: center;
@@ -262,11 +266,13 @@ footer {
     width: 22px;
   }
 
+  /* Desktop Navigation */
+
   .nav-main {
     list-style: none;
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-around;
     column-gap: 2rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -286,11 +292,18 @@ footer {
     text-decoration: none;
   }
 
+  a:hover {
+    color: white;
+  }
+
   a + div {
     display: none;
   }
 
-  a:hover + div,
+  a:hover + div {
+    display: block;
+  }
+
   a:active + div {
     display: block;
   }
@@ -304,8 +317,10 @@ footer {
   }
 
   .ur-here {
+    display: none;
     width: 17px;
     height: 38px;
+    margin: 0 auto;
   }
 
   .aire-mobile {
@@ -341,6 +356,28 @@ footer {
     padding: 3rem;
   }
 
+  .intro {
+  }
+
+  .rules {
+    background-color: #546ca8;
+    height: 600px;
+  }
+
+  .resources {
+    background-color: #ddd666;
+    height: 800px;
+  }
+
+  .participate {
+    background-color: black;
+    height: 500px;
+  }
+
+  .vote {
+    background-color: salmon;
+    height: 200px;
+  }
   h1 {
     font-size: 2rem;
     margin-bottom: 2rem;
