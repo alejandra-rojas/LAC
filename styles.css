@@ -91,7 +91,6 @@ button {
 }
 
 .arrows-bottom {
-  grid-area: b;
   background-image: url(media/blanco-picos-abajo.png);
   height: 32px;
 }
@@ -343,28 +342,26 @@ footer {
   }
 
   .container-main {
-    grid-template-columns: 1fr minmax(900px, 6fr) 1fr;
-    grid-template-rows: 47px 10fr 47px;
-    grid-template-areas:
-      " t t t t t t t t"
-      " l m m m m m m r"
-      " l m m m m m m r"
-      " l m m m m m m r"
-      " l m m m m m m r"
-      " l m m m m m m r"
-      " l m m m m m m r"
-      " l m m m m m m r"
-      " l m m m m m m r"
-      " l m m m m m m r"
-      " l m m m m m m r"
-      " b b b b b b b b";
+    display: flex;
   }
 
-  .main-content {
-    grid-area: m;
+  main {
     display: flex;
     flex-direction: column;
     padding: 3rem;
+  }
+
+  .decorative-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .decorative-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
   }
 
   #about {
@@ -389,6 +386,7 @@ footer {
     background-color: salmon;
     height: 200px;
   }
+
   h1 {
     font-size: 2rem;
     margin-bottom: 2rem;
