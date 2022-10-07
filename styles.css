@@ -18,7 +18,7 @@ nav {
   scroll-behavior: smooth;
 }
 
-/* MOBILE STYLES */
+/* mobile */
 
 /* Header Elements */
 
@@ -106,7 +106,7 @@ button {
 
 /* Body */
 
-.container {
+.container-main {
   background-color: var(--yellow);
   background-image: url(media/textura-puntos.png);
   background-image: 85%;
@@ -210,7 +210,7 @@ footer {
 /* Tablet Styles (min-width: 768px) and*/
 
 @media screen and (min-width: 768px) and (max-width: 1149px) {
-  .container {
+  .container-main {
     grid-template-columns: 55px minmax(4fr, 800px) 55px;
   }
 
@@ -281,32 +281,7 @@ footer {
     white-space: nowrap;
   }
 
-  a img {
-    display: block;
-    margin: 0 auto;
-  }
-
-  a:link,
-  a:visited {
-    color: var(--blue);
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: white;
-  }
-
-  a + div {
-    display: none;
-  }
-
-  a:hover + div {
-    display: block;
-  }
-
-  a:active + div {
-    display: block;
-  }
+  /* Flexbox for each menu item*/
 
   .nav-main li {
     display: flex;
@@ -316,12 +291,44 @@ footer {
     justify-content: flex-start;
   }
 
-  .ur-here {
-    display: none;
-    width: 17px;
-    height: 38px;
+  /* Icon on top for menu section */
+
+  a img {
+    display: block;
     margin: 0 auto;
   }
+
+  nav .container ul li a {
+    color: var(--blue);
+    text-decoration: none;
+  }
+
+  /* Hover */
+
+  nav .container ul li a:hover {
+    color: white;
+  }
+
+  nav .container ul li.active {
+    border-bottom: 3px solid var(--blue);
+    transition: 0.3s;
+  }
+
+  /* Arrow on hover */
+
+  nav .container ul li a + div {
+    display: none;
+  }
+
+  nav .container ul li a:hover + div {
+    display: block;
+  }
+
+  a:active + div {
+    display: block;
+  }
+
+  /* Side Decoration  */
 
   .aire-mobile {
     display: none;
@@ -331,7 +338,7 @@ footer {
     display: block;
   }
 
-  .container {
+  .container-main {
     grid-template-columns: 1fr minmax(900px, 6fr) 1fr;
     grid-template-rows: 47px 10fr 47px;
     grid-template-areas:
@@ -356,25 +363,25 @@ footer {
     padding: 3rem;
   }
 
-  .intro {
+  #about {
   }
 
-  .rules {
+  #rules {
     background-color: #546ca8;
     height: 600px;
   }
 
-  .resources {
+  #resources {
     background-color: #ddd666;
     height: 800px;
   }
 
-  .participate {
+  #participate {
     background-color: black;
     height: 500px;
   }
 
-  .vote {
+  #vote {
     background-color: salmon;
     height: 200px;
   }
