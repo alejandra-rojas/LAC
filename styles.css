@@ -275,6 +275,11 @@ footer {
     white-space: nowrap;
   }
 
+  a img {
+    display: block;
+    margin: 0 auto;
+  }
+
   a:link,
   a:visited {
     color: var(--blue);
