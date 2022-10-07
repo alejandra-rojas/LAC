@@ -221,6 +221,7 @@ footer {
   header {
     padding: 35px 50px 15px 50px;
     column-gap: 2rem;
+    align-items: flex-start;
   }
 
   .ham-menu {
@@ -236,7 +237,7 @@ footer {
     display: flex;
     flex: 1;
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 0.8rem;
   }
 
   .lang-selector {
@@ -278,6 +279,15 @@ footer {
   a:visited {
     color: var(--blue);
     text-decoration: none;
+  }
+
+  a + div {
+    display: none;
+  }
+
+  a:hover + div,
+  a:active + div {
+    display: block;
   }
 
   .nav-main li {
