@@ -18,6 +18,12 @@ nav {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: var(--yellow);
+  background-image: url(media/textura-puntos.png);
+  background-image: 85%;
+}
+
 /* mobile */
 
 /* Header Elements */
@@ -25,7 +31,9 @@ nav {
 header {
   position: sticky;
   top: 0;
+}
 
+.header-container {
   background-color: var(--green);
   display: flex;
   align-items: center;
@@ -78,7 +86,6 @@ button {
 }
 
 .arrows-top {
-  grid-area: t;
   background-image: url(media/picos-arriba-verde.png);
   height: 33px;
 }
@@ -107,9 +114,6 @@ button {
 /* Body */
 
 .container-main {
-  background-color: var(--yellow);
-  background-image: url(media/textura-puntos.png);
-  background-image: 85%;
   display: grid;
   grid-template-columns: 55px 6fr 55px;
   grid-template-rows: 1fr 10fr 1fr;
@@ -222,7 +226,7 @@ footer {
 /* Desktop Styles */
 
 @media screen and (min-width: 1150px) {
-  header {
+  .header-container {
     padding: 35px 50px 15px 50px;
     column-gap: 2rem;
     align-items: flex-start;
