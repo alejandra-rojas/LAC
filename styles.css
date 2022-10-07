@@ -17,7 +17,22 @@ nav {
   font-size: 16px;
 }
 
-/* General Styles */
+body {
+  background-color: black;
+}
+
+/* Mobile Styles */
+
+/* Header Elements */
+
+header {
+  background-color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  column-gap: 15px;
+}
 
 button {
   padding: 0;
@@ -29,18 +44,37 @@ button {
   cursor: pointer;
 }
 
-body {
-  background-color: black;
-}
-
-header {
-  background-color: var(--green);
-  display: flex;
-}
-
 .lang-bt-text {
   text-transform: uppercase;
   color: var(--yellow);
+}
+
+.logo {
+  width: 145px;
+  height: 145px;
+}
+
+.twotiernav {
+  display: none;
+}
+
+.lang-selector-mobile {
+  display: flex;
+  align-items: center;
+  column-gap: 0.2rem;
+  background-color: #6c8cda;
+  border-radius: 10%;
+  padding: 0.2rem;
+}
+
+.lang-selector-mobile button img {
+  width: 22px;
+}
+
+/* Decorative Elements */
+
+.remove-aire-big {
+  display: none;
 }
 
 .arrows-top {
@@ -70,11 +104,40 @@ header {
   justify-content: center;
 }
 
+/* Body */
+
 .container {
   background-color: var(--yellow);
   background-image: url(media/textura-puntos.png);
   background-image: 85%;
   display: grid;
+  grid-template-columns: 55px 6fr 55px;
+  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-areas:
+    " t t t t t t t t"
+    " l m m m m m m r"
+    " l m m m m m m r"
+    " l m m m m m m r"
+    " l m m m m m m r"
+    " l m m m m m m r"
+    " l m m m m m m r"
+    " l m m m m m m r"
+    " l m m m m m m r"
+    " l m m m m m m r"
+    " l m m m m m m r"
+    " b b b b b b b b";
+}
+
+.content-main {
+  grid-area: m;
+  padding: 1rem 0.3rem 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 p {
@@ -113,105 +176,52 @@ h4 {
   color: var(--blue);
 }
 
-/* Mobile Styles */
+/* Footer styles */
 
-@media screen and (max-width: 619px) {
-  header {
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 20px;
-    column-gap: 15px;
-  }
+h3 {
+  font-size: 0.7rem;
+}
 
-  .logo {
-    width: 145px;
-    height: 145px;
-  }
+footer {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  column-gap: 1rem;
+  padding: 1rem 10px;
+}
 
-  .twotiernav {
-    display: none;
-  }
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+}
 
-  .lang-selector-mobile {
-    display: flex;
-    align-items: center;
-    column-gap: 0.2rem;
-    background-color: #6c8cda;
-    border-radius: 10%;
-    padding: 0.2rem;
-  }
+.social-media {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
 
-  .lang-selector-mobile button img {
-    width: 22px;
-  }
+.copy {
+  font-size: 0.5rem;
+  text-align: center;
+}
 
+/* Tablet Styles (min-width: 768px) and*/
+
+@media screen and (min-width: 768px) and (max-width: 1149px) {
   .container {
-    grid-template-columns: 55px 6fr 55px;
-    grid-template-rows: 1fr 10fr 1fr;
-    grid-template-areas:
-      " t t t t t t t t"
-      " l m m m m m m r"
-      " l m m m m m m r"
-      " l m m m m m m r"
-      " l m m m m m m r"
-      " l m m m m m m r"
-      " l m m m m m m r"
-      " l m m m m m m r"
-      " l m m m m m m r"
-      " l m m m m m m r"
-      " l m m m m m m r"
-      " b b b b b b b b";
-  }
-
-  .remove-aire {
-    display: none;
+    grid-template-columns: 55px minmax(4fr, 800px) 55px;
   }
 
   .content-main {
-    grid-area: m;
-    padding: 1rem 0.3rem;
-    display: flex;
-    flex-direction: column;
-  }
-
-  h1 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-  }
-
-  h3 {
-    font-size: 0.7rem;
-  }
-
-  footer {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    row-gap: 1rem;
-    column-gap: 1rem;
-    padding: 1rem 10px;
-  }
-
-  .footer-nav {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .social-media {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 10px;
-  }
-
-  .copy {
-    font-size: 0.5rem;
-    text-align: center;
+    padding: 3rem 4rem;
   }
 }
 
 /* Desktop Styles */
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 1150px) {
   header {
     padding: 35px 50px 15px 50px;
     column-gap: 2rem;
@@ -291,9 +301,13 @@ h4 {
     display: none;
   }
 
+  .remove-aire-big {
+    display: block;
+  }
+
   .container {
-    grid-template-columns: 30px 6fr 30px;
-    grid-template-rows: 46px 10fr 47px;
+    grid-template-columns: 1fr minmax(900px, 6fr) 1fr;
+    grid-template-rows: 47px 10fr 47px;
     grid-template-areas:
       " t t t t t t t t"
       " l m m m m m m r"
@@ -313,8 +327,7 @@ h4 {
     grid-area: m;
     display: flex;
     flex-direction: column;
-    padding: 3rem 4rem 3rem 14rem;
-    min-width: 1000px;
+    padding: 3rem;
   }
 
   h1 {
