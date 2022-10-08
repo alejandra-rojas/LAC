@@ -17,7 +17,7 @@ let toggleButton = document.getElementById('ham-button');
 let navList = document.getElementById('ham-active');
 
 toggleButton.addEventListener('click', () => {
-  navList.classList.toggle('ham-activeb');
+  navList.classList.toggle('ham-active1');
 })
 
 
