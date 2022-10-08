@@ -24,13 +24,15 @@ body {
   background-image: 85%;
 }
 
-/* mobile */
+/* Hamburger Menu */
 
 /* Header Elements */
 
 header {
   position: sticky;
   top: 0;
+  width: 100%;
+  transition: 0.2s;
 }
 
 .header-container {
@@ -58,8 +60,8 @@ button {
 }
 
 .logo {
-  width: 145px;
-  height: 145px;
+  width: 140px;
+  height: 140px;
 }
 
 .twotiernav {
