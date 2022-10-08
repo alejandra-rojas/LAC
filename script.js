@@ -1,4 +1,15 @@
+// Reducing header height on scroll by reducing size of logo
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 50) {
+    document.getElementById("logo").style.width = "70px";
+    document.getElementById("logo").style.height = "70px";
+  } else {
+    document.getElementById("logo").style.width = "140px";
+    document.getElementById("logo").style.height = "140px";
+  }
+}
 
 // Hamburger Menu Mobile
 let toggleButton = document.getElementById('ham-button');
@@ -30,15 +41,3 @@ window.onscroll = () => {
   });
 };
 
-// Reducing header height on scroll by reducing size of logo
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 50) {
-    document.getElementById("logo").style.width = "70px";
-    document.getElementById("logo").style.height = "70px";
-  } else {
-    document.getElementById("logo").style.width = "140px";
-    document.getElementById("logo").style.height = "140px";
-  }
-}

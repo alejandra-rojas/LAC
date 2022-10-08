@@ -384,6 +384,10 @@ footer {
     flex-direction: row;
   }
 
+  .lang-logo-ham {
+    padding: 0;
+  }
+
   .ham-container {
     display: none;
   }
@@ -393,8 +397,9 @@ footer {
   }
 
   .logo {
-    width: 195px;
-    height: 195px;
+    height: 210px;
+    width: 210px;
+    transition: 2s;
   }
 
   h1 {
@@ -405,6 +410,7 @@ footer {
     display: flex;
     flex: 1;
     flex-direction: column;
+    row-gap: 0.3rem;
   }
 
   .dropcontainer {
