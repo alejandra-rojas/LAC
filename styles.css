@@ -90,6 +90,7 @@ header {
   background-color: var(--green);
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 button {
@@ -232,6 +233,7 @@ a:active + div {
   transform: translate(0, -50%);
   height: 100vh;
   overflow: auto;
+  z-index: -1;
 }
 
 .decorative-right {
@@ -245,6 +247,7 @@ a:active + div {
   transform: translate(0, -50%);
   height: 100vh;
   overflow: auto;
+  z-index: -1;
 }
 
 /* Body */
