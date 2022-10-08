@@ -34,9 +34,9 @@ window.onscroll = () => {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 50) {
-    document.getElementById("logo").style.width = "60px";
-    document.getElementById("logo").style.height = "60px";
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 50) {
+    document.getElementById("logo").style.width = "70px";
+    document.getElementById("logo").style.height = "70px";
   } else {
     document.getElementById("logo").style.width = "140px";
     document.getElementById("logo").style.height = "140px";
