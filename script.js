@@ -1,5 +1,4 @@
-// Reducing header height on scroll
-
+// Reducing header height on scroll by reducing size of logo
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {

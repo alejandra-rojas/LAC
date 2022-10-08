@@ -16,6 +16,7 @@ nav {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   scroll-behavior: smooth;
+  color: var(--blue);
 }
 
 body {
@@ -24,7 +25,57 @@ body {
   background-image: 85%;
 }
 
-/* Hamburger Menu */
+/* LANGUAGE DROPDOWN BUTTON */
+.dropbtn {
+  display: flex;
+  align-items: center;
+  column-gap: 0.2rem;
+  background-color: #6c8cda;
+  border-radius: 10%;
+  padding: 0.2rem;
+  text-transform: uppercase;
+  color: var(--yellow);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 90px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #546ca8;
+  padding: 5px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #546ca8;
+  color: white;
+}
 
 /* Header Elements */
 
@@ -51,11 +102,6 @@ button {
   cursor: pointer;
 }
 
-.lang-bt-text {
-  text-transform: uppercase;
-  color: var(--yellow);
-}
-
 .logo {
   width: 140px;
   height: 140px;
@@ -68,6 +114,8 @@ button {
   background-color: #6c8cda;
   border-radius: 10%;
   padding: 0.2rem;
+  text-transform: uppercase;
+  color: var(--yellow);
 }
 
 .lang-selector-mobile button img {
@@ -78,7 +126,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 10px 20px;
   column-gap: 15px;
 }
 
@@ -89,6 +137,7 @@ button {
 .container {
   display: none;
 }
+
 .nav-main {
   list-style: none;
   display: flex;
@@ -133,13 +182,14 @@ nav .container ul li a {
 
 nav .container ul li a:hover {
   color: white;
+  transition: 0.5s;
 }
 
 nav .container ul li.active {
-  text-decoration: 3px wavy;
+  text-decoration: 3px white wavy;
   text-decoration-line: underline;
   text-underline-offset: 4px;
-  transition: 0.3s;
+  transition: 1s;
 }
 
 /* Arrow on hover */
@@ -199,11 +249,15 @@ a:active + div {
 
 /* Body */
 
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
 .main-content {
   padding: 1rem 3rem;
   margin: 0 20px;
-  display: flex;
-  flex-direction: column;
 }
 
 h1 {
@@ -288,19 +342,41 @@ footer {
   .main-content {
     padding: 3rem 4rem;
   }
+
+  .container {
+    display: block;
+  }
+
+  .ham-active1 {
+    display: none;
+  }
+
+  .nav-main {
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    padding: 1rem 0.9rem 1.3rem;
+    column-gap: 5px;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
 }
 
 /* Desktop Styles */
 
 @media screen and (min-width: 1150px) {
   .header-container {
-    padding: 35px 50px 15px 50px;
+    padding: 25px 50px 15px 50px;
     column-gap: 2rem;
     align-items: flex-start;
+    flex-direction: row;
   }
 
-  .ham-menu {
+  .ham-container {
     display: none;
+  }
+
+  .container {
+    display: block;
   }
 
   .logo {
@@ -308,29 +384,24 @@ footer {
     height: 195px;
   }
 
+  h1 {
+    display: none;
+  }
+
   .twotiernav {
     display: flex;
     flex: 1;
     flex-direction: column;
-    row-gap: 0.8rem;
+  }
+
+  .dropcontainer {
+    display: none; /* hiding lang button mobile */
   }
 
   .lang-selector {
+    /* container of language button */
     display: flex;
     justify-content: flex-end;
-  }
-
-  .lang-selector-mobile {
-    display: none;
-  }
-
-  .lang-selector button {
-    display: flex;
-    align-items: flex-start;
-    column-gap: 0.2rem;
-    background-color: #6c8cda;
-    border-radius: 10%;
-    padding: 0.2rem;
   }
 
   .lang-selector button img {
@@ -376,15 +447,6 @@ footer {
 
   /* Hover */
 
-  nav .container ul li a:hover {
-    color: white;
-  }
-
-  nav .container ul li.active {
-    border-bottom: 3px solid var(--blue);
-    transition: 0.3s;
-  }
-
   /* Arrow on hover */
 
   nav .container ul li a + div {
@@ -393,6 +455,7 @@ footer {
 
   nav .container ul li a:hover + div {
     display: block;
+    transition: 0.5s;
   }
 
   a:active + div {
@@ -443,26 +506,27 @@ footer {
     overflow: auto;
   }
 
+  .intro {
+    background-color: #546ca8;
+    color: beige;
+  }
+
   #about {
   }
 
   #rules {
-    background-color: #546ca8;
     height: 600px;
   }
 
   #resources {
-    background-color: #ddd666;
     height: 800px;
   }
 
   #participate {
-    background-color: black;
     height: 500px;
   }
 
   #vote {
-    background-color: salmon;
     height: 200px;
   }
 
