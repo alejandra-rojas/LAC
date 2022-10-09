@@ -26,6 +26,11 @@ body {
   background-image: 85%;
 }
 
+a,
+u {
+  text-decoration: none;
+}
+
 /* LANGUAGE DROPDOWN BUTTON */
 .dropbtn {
   display: flex;
@@ -252,7 +257,15 @@ main {
   flex-direction: column;
 }
 
-.section-container {
+.intro {
+  display: flex;
+  padding: 2rem 0;
+  font-size: 1.1rem;
+  text-align: justify;
+  font-weight: 800;
+}
+
+.padding-main-container {
   padding: 2rem 1.2rem;
 }
 
@@ -265,10 +278,10 @@ h1 {
 }
 
 h2 {
-  font-weight: 500;
+  font-weight: 800;
   font-size: 2rem;
   color: var(--green);
-  padding-bottom: 0.8rem;
+  margin: 1.2rem 0;
   text-decoration: 5px var(--white) wavy;
   text-decoration-line: underline;
 }
@@ -282,32 +295,18 @@ h3 {
 
 p {
   color: var(--blue);
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding-bottom: 1rem;
-  line-height: 1.2rem;
+  font-weight: 600;
 }
 
 /* Each Stage styling */
 
-.intro {
-  display: flex;
-  padding: 2rem 0;
-  font-size: 1.1rem;
-  text-align: justify;
-  font-weight: 800;
-}
-
 .stages-single-container {
   display: flex;
   column-gap: 0.5rem;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding-bottom: 1rem;
-}
-
-.highlight {
-  background-color: beige;
-  font-weight: 600;
-  transition: 2s;
 }
 
 .circle {
@@ -343,6 +342,22 @@ h5 {
   text-transform: uppercase;
   padding-bottom: 0.5rem;
   font-weight: 600;
+}
+
+.resources {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.resourcesbtn {
+  display: flex;
+  align-items: center;
+  background-color: var(--green);
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  color: beige;
 }
 
 /* Footer */
@@ -636,7 +651,7 @@ footer {
   }
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding-bottom: 1rem;
   }
 
