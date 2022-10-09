@@ -586,13 +586,23 @@ footer {
 
   /* Side Decoration  */
 
-  .aire-mobile {
+  .decorative-left-mobile,
+  .decorative-right-mobile {
     display: none;
   }
 
-  .remove-aire-big {
-    display: block;
+  .decorative-left,
+  .decorative-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+
+  .decorative-right {
+    align-items: flex-end;
+  }
+
+  /* MAIN */
 
   main {
     display: flex;
@@ -600,31 +610,11 @@ footer {
   }
 
   .main-content {
-    padding: 3rem 12rem;
+    padding: 3rem 0;
   }
 
-  .decorative-left-mobile {
-    display: none;
-  }
-
-  .decorative-right-mobile {
-    display: none;
-  }
-
-  .decorative-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .decorative-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-  }
-
-  .intro {
+  .intro-container-text {
+    padding: 0 5rem;
   }
 
   #about {
