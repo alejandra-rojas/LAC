@@ -217,8 +217,21 @@ a:active + div {
   display: none;
 }
 
+.decorative-left-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .decorative-right {
   display: none;
+}
+
+.decorative-right-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .arrows-top {
@@ -239,11 +252,10 @@ main {
 }
 
 .main-content {
-  padding: 2rem 1.2rem;
 }
 
 .section-container {
-  padding-top: 7rem;
+  padding: 2rem 1.2rem;
 }
 
 h1 {
@@ -278,26 +290,27 @@ p {
   line-height: 1.2rem;
 }
 
+/* Each Stage styling */
+
 .intro {
-  padding: 0 1rem;
+  display: flex;
+  padding: 2rem 0;
   font-size: 1.1rem;
   text-align: justify;
   font-weight: 800;
 }
-
-.highlight {
-  background-color: beige;
-  font-weight: 600;
-  transition: 2s;
-}
-
-/* Each Stage styling */
 
 .stages-single-container {
   display: flex;
   column-gap: 0.5rem;
   justify-content: flex-end;
   padding-bottom: 1rem;
+}
+
+.highlight {
+  background-color: beige;
+  font-weight: 600;
+  transition: 2s;
 }
 
 .circle {
