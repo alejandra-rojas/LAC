@@ -9,6 +9,7 @@
   --green: #33c5aa;
   --blue: #546ca8;
   --yellow: #ddd666;
+  --white: rgba(255, 255, 255, 0.557);
 }
 
 html,
@@ -268,9 +269,8 @@ h2 {
   font-size: 2rem;
   color: var(--green);
   padding-bottom: 0.8rem;
-  text-decoration: 3px beige wavy;
+  text-decoration: 5px var(--white) wavy;
   text-decoration-line: underline;
-  text-underline-offset: 4px;
 }
 
 h3 {
@@ -314,8 +314,8 @@ p {
   padding: 0 7px;
   border-radius: 50%;
   height: 35px;
-  border: 4px solid rgba(255, 255, 255, 0.557);
-  color: rgba(255, 255, 255, 0.557);
+  border: 4px solid var(--white);
+  color: var(--white);
   text-align: center;
   font-weight: 800;
   font-size: 1.4rem;
@@ -331,7 +331,7 @@ h4 {
 }
 
 .underline {
-  text-decoration: 5px rgba(255, 255, 255, 0.557) wavy;
+  text-decoration: 4px beige wavy;
   text-decoration-line: underline;
   text-underline-offset: 2px;
   transition: 1s;
