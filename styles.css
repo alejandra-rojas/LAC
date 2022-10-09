@@ -266,7 +266,7 @@ main {
 }
 
 .padding-main-container {
-  padding: 2rem 1.2rem;
+  padding: 0rem 1.2rem 2rem;
 }
 
 h1 {
@@ -354,7 +354,7 @@ h5 {
   display: flex;
   justify-content: center;
   background-color: var(--green);
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 0.8rem;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 700;
@@ -375,7 +375,7 @@ h5 {
   width: calc(100% + var(--borderWidth) * 2);
   background: linear-gradient(
     60deg,
-    #f79533,
+    #546ca8,
     #5073b8,
     #1098ad,
     #07b39b,
