@@ -196,20 +196,6 @@ nav .container ul li.active {
   transition: 1s;
 }
 
-/* Arrow on hover */
-
-nav .container ul li a + div {
-  display: none;
-}
-
-nav .container ul li a:hover + div {
-  display: none;
-}
-
-a:active + div {
-  display: block;
-}
-
 /* Decorative Elements */
 
 .decorative-left,
@@ -552,21 +538,6 @@ footer {
   }
 
   /* Hover */
-
-  /* Arrow on hover */
-
-  nav .container ul li a + div {
-    display: none;
-  }
-
-  nav .container ul li a:hover + div {
-    display: block;
-    transition: 0.5s;
-  }
-
-  a:active + div {
-    display: block;
-  }
 
   /* Side Decoration  */
 
