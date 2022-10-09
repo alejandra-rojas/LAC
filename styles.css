@@ -615,12 +615,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: fixed;
-    left: 0;
-    top: 60%;
-    transform: translate(0, -50%);
-    height: 100vh;
-    overflow: auto;
   }
 
   .decorative-right {
@@ -628,12 +622,6 @@ footer {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    position: fixed;
-    right: 0;
-    top: 60%;
-    transform: translate(0, -50%);
-    height: 100vh;
-    overflow: auto;
   }
 
   .intro {
