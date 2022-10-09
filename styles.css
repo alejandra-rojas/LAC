@@ -262,7 +262,7 @@ main {
   padding: 2rem 0;
   font-size: 1.1rem;
   text-align: justify;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .padding-main-container {
@@ -423,16 +423,20 @@ footer {
 /* Tablet Styles (min-width: 768px) and*/
 
 @media screen and (min-width: 768px) and (max-width: 1149px) {
-  .container-main {
-    grid-template-columns: 55px minmax(4fr, 800px) 55px;
-  }
-
-  .main-content {
-    padding: 3rem 4rem;
-  }
-
+  /* Menu icons */
   .container {
     display: block;
+  }
+
+  .ham-active1 {
+    display: none;
+  }
+
+  /* Header Elements */
+
+  .logo {
+    height: 140px;
+    width: 140px;
   }
 
   .header-container {
@@ -440,15 +444,6 @@ footer {
     column-gap: 2rem;
     align-items: center;
     flex-direction: column;
-  }
-
-  .ham-active1 {
-    display: none;
-  }
-
-  .logo {
-    height: 140px;
-    width: 140px;
   }
 
   .nav-main {
@@ -468,6 +463,17 @@ footer {
   .arrows-bottom {
     background-image: url(media/blanco-picos-abajo.png);
     height: 32px;
+  }
+
+  /* Main Styles */
+
+  .intro {
+    padding: 2rem 0;
+    font-size: 2rem;
+    column-gap: 1.9rem;
+  }
+  .padding-main-container {
+    padding: 0 4rem 2rem;
   }
 }
 
@@ -597,6 +603,14 @@ footer {
     padding: 3rem 12rem;
   }
 
+  .decorative-left-mobile {
+    display: none;
+  }
+
+  .decorative-right-mobile {
+    display: none;
+  }
+
   .decorative-left {
     display: flex;
     flex-direction: column;
@@ -623,8 +637,6 @@ footer {
   }
 
   .intro {
-    background-color: #546ca8;
-    color: beige;
   }
 
   #about {
