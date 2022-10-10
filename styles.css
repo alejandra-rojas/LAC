@@ -270,7 +270,7 @@ h3 {
   border-bottom: 3px solid var(--green);
   color: var(--green);
   padding: 0 0.5rem 0 0;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   width: fit-content;
 }
 
