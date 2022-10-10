@@ -190,7 +190,7 @@ nav .container ul li a:hover {
 }
 
 nav .container ul li.active {
-  text-decoration: 3px var(--beige);
+  text-decoration: 2px var(--beige);
   text-decoration-line: underline;
   text-underline-offset: 4px;
   transition: 1s;
@@ -235,14 +235,14 @@ main {
 
 .intro {
   display: flex;
-  padding: 1rem 0;
+  padding: 1.5rem 0 0 0;
   font-size: 1.1rem;
   text-align: justify;
   font-weight: 900;
 }
 
 .padding-main-container {
-  padding: 0rem 1.2rem 2rem;
+  padding: 1.2rem;
 }
 
 h1 {
@@ -253,14 +253,20 @@ h1 {
   text-align: center;
 }
 
+.boxed-title {
+  display: flex;
+  column-gap: 0.5rem;
+  background-color: var(--green);
+  margin: 0 0 1.5rem 0;
+  padding: 0.3rem 0.5rem;
+  width: fit-content;
+  align-items: center;
+}
+
 h2 {
   font-weight: 700;
   font-size: 1.8rem;
-  margin: 0 0 1.2rem 0;
-  background-color: var(--green);
-  padding: 0.3rem 0.8rem;
   color: var(--beige);
-  width: fit-content;
 }
 
 h3 {
@@ -339,6 +345,7 @@ h5 {
 .resources {
   display: flex;
   column-gap: 10px;
+  align-items: center;
 }
 
 .resourcesbtn {
@@ -486,11 +493,11 @@ footer {
   .intro {
     padding: 2rem 0;
     font-size: 2rem;
-    column-gap: 1.9rem;
+    column-gap: 1.5rem;
   }
 
   .padding-main-container {
-    padding: 0 4rem 2rem;
+    padding: 2rem 3rem;
   }
 
   footer {
@@ -610,7 +617,11 @@ footer {
   /* MAIN */
 
   .intro {
-    padding: 3rem 0;
+    padding: 3.5rem 0 1rem;
+  }
+
+  .boxed-title img {
+    display: none;
   }
 
   .circle {
@@ -649,7 +660,7 @@ footer {
   }
 
   .padding-main-container {
-    padding: 0 2rem 2rem;
+    padding: 2rem;
     margin: 0rem auto;
     display: flex;
     flex-direction: column;
