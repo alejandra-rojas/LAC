@@ -9,7 +9,7 @@
   --green: #33c5aa;
   --blue: #546ca8;
   --yellow: #ddd666;
-  --white: rgba(255, 255, 255, 0.8);
+  --white: rgba(255, 255, 255, 0.7);
 }
 
 html,
@@ -102,13 +102,13 @@ header {
   top: 0;
   width: 100%;
   transition: 0.2s;
+  z-index: 1;
 }
 
 .header-container {
   background-color: var(--green);
   display: flex;
   flex-direction: column;
-  z-index: 1;
 }
 
 button {
@@ -276,6 +276,11 @@ p {
   font-weight: 600;
 }
 
+.header-offset {
+  position: relative;
+  top: -240px;
+}
+
 /* Each Stage styling */
 
 .stages-single-container {
@@ -323,7 +328,7 @@ h5 {
 
 .resources {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   column-gap: 10px;
 }
 
@@ -452,10 +457,15 @@ footer {
   .padding-main-container {
     padding: 0 4rem 2rem;
   }
+
+  footer {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 50px;
+  }
 }
 
-/* Desktop Styles */
-
+/* DESKTOP STYLES */
 @media screen and (min-width: 1150px) {
   .header-container {
     padding: 15px 50px 10px 50px;
@@ -666,12 +676,6 @@ footer {
   .arrows-bottom {
     background-image: url(media/blanco-picos-abajo.png);
     height: 32px;
-  }
-
-  footer {
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 50px;
   }
 
   .footer-nav {

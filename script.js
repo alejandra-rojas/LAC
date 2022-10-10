@@ -11,14 +11,14 @@ toggleButton.addEventListener('click', () => {
 
 // Active menu on scroll
 
-const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll(".header-offset");
 const navLi = document.querySelectorAll("nav .container ul li");
 window.onscroll = () => {
   var current = "";
 
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
-    if (pageYOffset >= sectionTop - 60) {
+    if (scrollY >= sectionTop - 60) {
       current = section.getAttribute("id"); }
   });
 
