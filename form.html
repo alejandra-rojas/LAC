@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forma</title>
+
+    <link rel="icon" type="image/x-icon" href="Media/favicon_io/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
+  </head>
+  <body>
+    <form
+      name="Photo-Entry"
+      enctype="multipart/form-data"
+      data-netlify="true"
+      class="entry-form"
+    >
+      <p>
+        <label>Name: <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Address: <input type="text" name="address" /></label>
+      </p>
+      <p>
+        <label>Postcode: <input type="text" name="postcode" /></label>
+      </p>
+      <p>
+        <label>City: <input type="text" name="city" /></label>
+      </p>
+      <p>
+        <label>Town: <input type="text" name="town" /></label>
+      </p>
+
+      <p>
+        <label>Email: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>Phone: <input type="tel" name="phone" /></label>
+      </p>
+      <p>
+        <label>ID or Passport number: <input type="text" name="id" /></label>
+      </p>
+      <p>
+        <label>Date of birth: <input type="date" name="birthday" /></label>
+      </p>
+
+      <p>
+        <label>
+          <span>Title:</span>
+          <input name="titulo" type="text" />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Category:
+          <select name="name" type="text">
+            <option value="video">Video</option>
+            <option value="photo">Photo</option>
+            <option value="ilustration">Illustration</option>
+            <option value="Paint">Drawing and Painting</option>
+          </select></label
+        >
+      </p>
+
+      <p>
+        <label>
+          <span>Upload file:</span>
+          <input name="file" type="file" />
+          <span class="form-text">File must be less than 8MB</span>
+        </label>
+      </p>
+
+      <p>
+        <label>
+          <span class="form-text"
+            >I declare that the work has not received any prazy in other
+            competitions before, and I assign the rights to reproduce it.
+            Likewise, I accept everything stipulated in the contest rules and
+            the legal conditions of participation.</span
+          >
+          <input name="Declaration" type="checkbox" required />
+        </label>
+      </p>
+
+      <p>
+        <label>
+          <span class="form-text"
+            >I accept
+            <a
+              href="/media/T&Cs/TheplanetisyourcanvasT&Cs.pdf"
+              attributes-list
+              download
+            >
+              Terms and Conditions
+            </a>
+          </span>
+          <input name="Declaration" type="checkbox" required />
+        </label>
+      </p>
+
+      <button><h3>Submit</h3></button>
+    </form>
+  </body>
+</html>

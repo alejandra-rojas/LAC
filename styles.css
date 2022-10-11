@@ -441,6 +441,21 @@ h5 {
 
 /* Footer */
 
+.entry-form {
+  display: flex;
+  flex-direction: column;
+}
+
+p label {
+  font-size: 1rem;
+}
+
+.form-text {
+  font-size: 0.8rem;
+}
+
+/* Footer */
+
 footer {
   background-color: white;
   display: flex;
