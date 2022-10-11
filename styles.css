@@ -253,27 +253,27 @@ h1 {
   text-align: center;
 }
 
-.container-title {
+.backimg-cont {
   background-image: url(media/iconswhite/participate.svg);
   background-color: transparent;
   background-repeat: no-repeat;
   height: 100px;
-  margin-top: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 .boxed-title {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   column-gap: 0.5rem;
   background-color: var(--green);
-  margin: 0 0 1.5rem 0;
+  margin: 1rem 0 2rem;
   padding: 0.3rem 0.5rem;
   width: fit-content;
-  align-items: center;
 }
 
-.leftmarg-title {
-  margin-left: 2rem;
+.move-right {
+  margin-left: 1rem;
 }
 
 h2 {
@@ -312,6 +312,33 @@ p {
 
 section {
   padding-top: 2rem;
+}
+
+.bounce-animation {
+  animation: bounce 1.5s ease 1;
+}
+@keyframes bounce {
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  95% {
+    transform: translateY(-7%);
+  }
+  97% {
+    transform: translateY(0%);
+  }
+  99% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* Each Stage styling */
@@ -355,6 +382,9 @@ h5 {
   font-weight: 600;
 }
 
+#vote {
+  height: 500px;
+}
 .resources {
   display: flex;
   column-gap: 10px;
@@ -395,6 +425,18 @@ h5 {
   font-size: 1.5rem;
   font-weight: 700;
   color: white;
+}
+
+.vote {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.vote p {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 /* Footer */

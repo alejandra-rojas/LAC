@@ -1,5 +1,4 @@
 
-
 // Hamburger Menu Mobile
 let toggleButton = document.getElementById('ham-button');
 let navList = document.getElementById('ham-active');
@@ -31,4 +30,21 @@ window.onscroll = () => {
 };
 
 
+// TRIGGERING CSS ANIMATION ON SCROLL
 
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const square = entry.target.querySelector('.backimg-cont');
+
+    if (entry.isIntersecting) {
+      square.classList.add('bounce-animation');
+	  return; // if we added the class, exit the function
+    }
+
+    // We're not intersecting, so remove the class!
+    square.classList.remove('bounce-animation');
+  });
+});
+
+observer.observe(document.querySelector('.animation-wrapper'));
