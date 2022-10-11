@@ -253,14 +253,27 @@ h1 {
   text-align: center;
 }
 
+.container-title {
+  background-image: url(media/iconswhite/participate.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  height: 100px;
+  margin-top: 2rem;
+}
+
 .boxed-title {
   display: flex;
+  justify-content: flex-end;
   column-gap: 0.5rem;
   background-color: var(--green);
   margin: 0 0 1.5rem 0;
   padding: 0.3rem 0.5rem;
   width: fit-content;
   align-items: center;
+}
+
+.leftmarg-title {
+  margin-left: 2rem;
 }
 
 h2 {
@@ -705,14 +718,6 @@ footer {
 
   h5 {
     font-size: 1rem;
-  }
-
-  #participate {
-    height: 500px;
-  }
-
-  #vote {
-    height: 200px;
   }
 
   /* FOOTER */
