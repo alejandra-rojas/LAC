@@ -447,7 +447,7 @@ footer {
 }
 
 .footer-title {
-  color: #599ddc;
+  color: #009fe2;
 }
 
 .social-media {
@@ -539,7 +539,7 @@ footer {
   }
 
   .arrows-bottom {
-    background-image: url(media/blanco-picos-abajo.png);
+    background-image: url(media/picos-abajo-blanco.png);
     height: 32px;
   }
 
@@ -774,7 +774,7 @@ footer {
   }
 
   .arrows-bottom {
-    background-image: url(media/blanco-picos-abajo.png);
+    background-image: url(media/picos-abajo-blanco.png);
     height: 32px;
   }
 
