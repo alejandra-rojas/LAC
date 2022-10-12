@@ -468,12 +468,8 @@ footer {
 
 /*RESOURCES*/
 
-.hide-resource {
-  display: none;
-}
-
 .posters-wrapper {
-  display: flex;
+  display: none; /*change to flex*/
   overflow-x: auto;
   column-gap: 0.5rem;
   row-gap: 0.5rem;
