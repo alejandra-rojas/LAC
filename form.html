@@ -246,6 +246,95 @@
       </form>
     </div>
 
+    <form
+      name="Photo-Entry"
+      action="/success.html"
+      enctype="multipart/form-data"
+      data-netlify="true"
+      class="entry-form"
+    >
+      <div class="form-heading">Participant data</div>
+
+      <div class="wrap-form">
+        <label>Name: <input type="text" name="name" size="32" /></label>
+
+        <label>Address: <input type="text" name="address" size="30" /></label>
+
+        <label>Postcode: <input type="text" name="postcode" /></label>
+
+        <label>City: <input type="text" name="city" /></label>
+
+        <label>Town: <input type="text" name="town" /></label>
+
+        <label>Email: <input type="email" name="email" size="30" /></label>
+
+        <label>Phone: <input type="tel" name="phone" /></label>
+
+        <label>ID or Passport number: <input type="text" name="id" /></label>
+
+        <label>Date of birth: <input type="date" name="birthday" /></label>
+      </div>
+      <div class="form-heading">Data of art</div>
+
+      <div class="wrap-form">
+        <label>
+          <span>Title:</span>
+          <input name="name" type="text" size="35" />
+        </label>
+
+        <label
+          >Category:
+          <select name="category" type="text" required>
+            <option value="">select one</option>
+            <option value="Paint">Drawing and Painting</option>
+            <option value="ilustration">Illustration</option>
+            <option value="photo">Photo</option>
+            <option value="video">Video</option>
+          </select></label
+        >
+
+        <label>
+          <span>Upload file:</span>
+          <input name="file" type="file" />
+          <div class="form-texts">File must be less than 8MB</div>
+        </label>
+
+        <label>
+          <span class="form-text"
+            >I declare that the work has not received any prize in other
+            competitions before, and I assign the rights to reproduce it.
+            Likewise, I accept everything stipulated in the contest rules and
+            the legal conditions of participation.</span
+          >
+          <input name="Declaration" type="checkbox" required />
+        </label>
+
+        <label>
+          <span class="form-text"
+            >I accept
+            <a
+              href="/media/T&Cs/TheplanetisyourcanvasT&Cs.pdf"
+              attributes-list
+              download
+            >
+              Terms and Conditions
+            </a>
+          </span>
+          <input name="Declaration" type="checkbox" required />
+        </label>
+      </div>
+      <div class="submit-box">
+        <button class="submit">
+          <img
+            src="media/SVG/flecha-derecha.svg"
+            alt="arrow pointing to the right"
+            width="38px"
+            height="17px"
+          />Submit Artwork
+        </button>
+      </div>
+    </form>
+
     <h2>RESOURCES</h2>
 
     <div class="posters-wrapper">
