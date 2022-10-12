@@ -10,6 +10,7 @@
   --blue: #546ca8;
   --yellow: #ddd666;
   --beige: white;
+  --darkblue: #3f51b5;
 }
 
 html,
@@ -267,7 +268,7 @@ h1 {
   justify-content: center;
   column-gap: 0.5rem;
   background-color: var(--green);
-  margin: 1rem 0 2rem;
+  margin: 1rem 0;
   padding: 0.3rem 0.5rem;
   width: fit-content;
 }
@@ -439,19 +440,99 @@ h5 {
   font-weight: 700;
 }
 
-/* Footer */
+/* EntryForm */
 
-.entry-form {
+.select-wrap {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  row-gap: 1rem;
 }
 
-p label {
+select {
+  width: fit-content;
+  padding: 1rem 2.5rem 1rem 1rem;
+  color: #0958a3;
   font-size: 1rem;
+  font-weight: 800;
+  border: none;
+  border-radius: 8px;
+  border: 3px solid #0958a3;
+  appearance: none;
+  background: #e8eaf6 url(media/SVG/rombo-dark-abajo.svg) no-repeat;
+  background-position: 93% 50%;
+  background-size: 15px;
+  margin-bottom: 1rem;
+}
+.content {
+  display: none;
+}
+
+.wrap-form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+}
+
+input {
+  size: 30;
+  padding: 4px;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+.form-heading {
+  display: flex;
+  justify-content: center;
+  background-color: #0958a3;
+  border-radius: 5%;
+  padding: 0.3rem 0.5rem;
+  width: fit-content;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0958a3;
+  padding-bottom: 0.5rem;
+}
+
+.form-texts {
+  font-size: 0.6rem;
+  font-weight: 500;
 }
 
 .form-text {
   font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.submit-box {
+  display: flex;
+  align-items: baseline;
+  column-gap: 0.5rem;
+  margin: 1rem auto;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  column-gap: 0.5rem;
+  border-radius: 5%;
+  background-color: #0958a3;
+  padding: 0.3rem;
+  width: fit-content;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 /* Footer */
@@ -550,7 +631,7 @@ footer {
 
   .arrows-top {
     background-image: url(media/picos-mobile-verdes.png);
-    height: 24px;
+    height: 23px;
   }
 
   .arrows-bottom {

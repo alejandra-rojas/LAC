@@ -5,6 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forma</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("select")
+          .change(function () {
+            $(this)
+              .find("option:selected")
+              .each(function () {
+                var optionValue = $(this).attr("value");
+                if (optionValue) {
+                  $(".box")
+                    .not("." + optionValue)
+                    .hide();
+                  $("." + optionValue).show();
+                } else {
+                  $(".box").hide();
+                }
+              });
+          })
+          .change();
+      });
+    </script>
 
     <link rel="icon" type="image/x-icon" href="Media/favicon_io/favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
@@ -28,102 +50,201 @@
     ></script>
   </head>
   <body>
-    <form
-      name="Photo-Entry"
-      enctype="multipart/form-data"
-      data-netlify="true"
-      class="entry-form"
-    >
-      <div>Participant data</div>
+    <div class="entry-wrapper">
+      <h3>Select your category</h3>
 
-      <p>
-        <label>Name: <input type="text" name="name" /></label>
-      </p>
-      <p>
-        <label>Address: <input type="text" name="address" /></label>
-      </p>
-      <p>
-        <label>Postcode: <input type="text" name="postcode" /></label>
-      </p>
-      <p>
-        <label>City: <input type="text" name="city" /></label>
-      </p>
-      <p>
-        <label>Town: <input type="text" name="town" /></label>
-      </p>
-
-      <p>
-        <label>Email: <input type="email" name="email" /></label>
-      </p>
-      <p>
-        <label>Phone: <input type="tel" name="phone" /></label>
-      </p>
-      <p>
-        <label>ID or Passport number: <input type="text" name="id" /></label>
-      </p>
-      <p>
-        <label>Date of birth: <input type="date" name="birthday" /></label>
-      </p>
-
-      <div>Data of art</div>
-
-      <p>
-        <label>
-          <span>Title:</span>
-          <input name="name" type="text" />
-        </label>
-      </p>
-
-      <p>
-        <label
-          >Category:
-          <select name="category" type="text" required>
-            <option value="">select one</option>
-            <option value="Paint">Drawing and Painting</option>
-            <option value="ilustration">Illustration</option>
-            <option value="photo">Photo</option>
-            <option value="video">Video</option>
-          </select></label
+      <div>
+        <select>
+          <option>Select your category</option>
+          <option value="dandp">Drawing and Painting</option>
+          <option value="illustration">Illustration</option>
+          <option value="photo">Photo</option>
+          <option value="video">Video</option>
+        </select>
+      </div>
+      <div class="dandp box">
+        <form
+          name="Photo-Entry"
+          enctype="multipart/form-data"
+          data-netlify="true"
+          class="entry-form"
         >
-      </p>
+          <div class="form-heading">Participant data</div>
 
-      <p>
-        <label>
-          <span>Upload file:</span>
-          <input name="file" type="file" />
-          <span class="form-text">File must be less than 8MB</span>
-        </label>
-      </p>
+          <div class="wrap-form">
+            <label>Name: <input type="text" name="name" size="32" /></label>
 
-      <p>
-        <label>
-          <span class="form-text"
-            >I declare that the work has not received any prazy in other
-            competitions before, and I assign the rights to reproduce it.
-            Likewise, I accept everything stipulated in the contest rules and
-            the legal conditions of participation.</span
+            <label
+              >Address: <input type="text" name="address" size="30"
+            /></label>
+
+            <label>Postcode: <input type="text" name="postcode" /></label>
+
+            <label>City: <input type="text" name="city" /></label>
+
+            <label>Town: <input type="text" name="town" /></label>
+
+            <label>Email: <input type="email" name="email" size="30" /></label>
+
+            <label>Phone: <input type="tel" name="phone" /></label>
+
+            <label
+              >ID or Passport number: <input type="text" name="id"
+            /></label>
+
+            <label>Date of birth: <input type="date" name="birthday" /></label>
+          </div>
+          <div class="form-heading">Data of art</div>
+
+          <div class="wrap-form">
+            <label>
+              <span>Title:</span>
+              <input name="name" type="text" size="35" />
+            </label>
+
+            <label>
+              <span>Upload file:</span>
+              <input name="file" type="file" />
+              <div class="form-texts">File must be less than 8MB</div>
+            </label>
+
+            <label>
+              <span class="form-text"
+                >I declare that the work has not received any prize in other
+                competitions before, and I assign the rights to reproduce it.
+                Likewise, I accept everything stipulated in the contest rules
+                and the legal conditions of participation.</span
+              >
+              <input name="Declaration" type="checkbox" required />
+            </label>
+
+            <label>
+              <span class="form-text"
+                >I accept
+                <a
+                  href="/media/T&Cs/TheplanetisyourcanvasT&Cs.pdf"
+                  attributes-list
+                  download
+                >
+                  Terms and Conditions
+                </a>
+              </span>
+              <input name="Declaration" type="checkbox" required />
+            </label>
+          </div>
+          <div class="submit-box">
+            <button class="submit">
+              <img
+                src="media/SVG/flecha-derecha.svg"
+                alt="arrow pointing to the right"
+                width="38px"
+                height="17px"
+              />Submit Artwork
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="illustration box">
+        You have selected <strong>green option</strong> so i am here
+      </div>
+      <div class="photo box">
+        You have selected <strong>blue option</strong> so i am here
+      </div>
+      <div class="video box">
+        You have selected <strong>blue option</strong> so i am here
+      </div>
+    </div>
+
+    <h2>Styled form with entry category in form</h2>
+
+    <div class="hidden">
+      <form
+        name="Photo-Entry"
+        enctype="multipart/form-data"
+        data-netlify="true"
+        class="entry-form"
+      >
+        <div class="form-heading">Participant data</div>
+
+        <div class="wrap-form">
+          <label>Name: <input type="text" name="name" size="32" /></label>
+
+          <label>Address: <input type="text" name="address" size="30" /></label>
+
+          <label>Postcode: <input type="text" name="postcode" /></label>
+
+          <label>City: <input type="text" name="city" /></label>
+
+          <label>Town: <input type="text" name="town" /></label>
+
+          <label>Email: <input type="email" name="email" size="30" /></label>
+
+          <label>Phone: <input type="tel" name="phone" /></label>
+
+          <label>ID or Passport number: <input type="text" name="id" /></label>
+
+          <label>Date of birth: <input type="date" name="birthday" /></label>
+        </div>
+        <div class="form-heading">Data of art</div>
+
+        <div class="wrap-form">
+          <label>
+            <span>Title:</span>
+            <input name="name" type="text" size="35" />
+          </label>
+
+          <label
+            >Category:
+            <select name="category" type="text" required>
+              <option value="">select one</option>
+              <option value="Paint">Drawing and Painting</option>
+              <option value="ilustration">Illustration</option>
+              <option value="photo">Photo</option>
+              <option value="video">Video</option>
+            </select></label
           >
-          <input name="Declaration" type="checkbox" required />
-        </label>
-      </p>
 
-      <p>
-        <label>
-          <span class="form-text"
-            >I accept
-            <a
-              href="/media/T&Cs/TheplanetisyourcanvasT&Cs.pdf"
-              attributes-list
-              download
+          <label>
+            <span>Upload file:</span>
+            <input name="file" type="file" />
+            <div class="form-texts">File must be less than 8MB</div>
+          </label>
+
+          <label>
+            <span class="form-text"
+              >I declare that the work has not received any prize in other
+              competitions before, and I assign the rights to reproduce it.
+              Likewise, I accept everything stipulated in the contest rules and
+              the legal conditions of participation.</span
             >
-              Terms and Conditions
-            </a>
-          </span>
-          <input name="Declaration" type="checkbox" required />
-        </label>
-      </p>
+            <input name="Declaration" type="checkbox" required />
+          </label>
 
-      <button><h3>Submit</h3></button>
-    </form>
+          <label>
+            <span class="form-text"
+              >I accept
+              <a
+                href="/media/T&Cs/TheplanetisyourcanvasT&Cs.pdf"
+                attributes-list
+                download
+              >
+                Terms and Conditions
+              </a>
+            </span>
+            <input name="Declaration" type="checkbox" required />
+          </label>
+        </div>
+        <div class="submit-box">
+          <button class="submit">
+            <img
+              src="media/SVG/flecha-derecha.svg"
+              alt="arrow pointing to the right"
+              width="38px"
+              height="17px"
+            />Submit Artwork
+          </button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>

@@ -46,5 +46,4 @@ const observer = new IntersectionObserver(entries => {
     square.classList.remove('bounce-animation');
   });
 });
-
 observer.observe(document.querySelector('.animation-wrapper'));

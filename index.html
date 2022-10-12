@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="Media/favicon_io/favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,6 +25,28 @@
       type="text/javascript"
       src="https://identity.netlify.com/v1/netlify-identity-widget.js"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("select")
+          .change(function () {
+            $(this)
+              .find("option:selected")
+              .each(function () {
+                var optionValue = $(this).attr("value");
+                if (optionValue) {
+                  $(".box")
+                    .not("." + optionValue)
+                    .hide();
+                  $("." + optionValue).show();
+                } else {
+                  $(".box").hide();
+                }
+              });
+          })
+          .change();
+      });
+    </script>
     <title>Canvas</title>
   </head>
   <!-- Write your comments here -->
@@ -112,7 +135,7 @@
                   </a>
                 </li>
                 <li class="participate">
-                  <a href="/form.html" role="menuitem"
+                  <a href="#participate" role="menuitem"
                     ><img
                       src="media/iconswhite/yellow/participate.svg"
                       height="70px"
@@ -381,11 +404,133 @@
 
         <div class="header-offset" id="participate"></div>
         <section class="participate">
-          <div class="animation-wrapper">
-            <div class="backimg-cont">
-              <div class="boxed-title move-right">
-                <h2>Participate</h2>
+          <div class="boxed-title">
+            <img
+              class="svg-inline"
+              src="media/iconswhite/participate.svg"
+              alt="icon of a raised hand"
+              srcset="media/iconswhite/participate.svg"
+              height="40px"
+              width="auto"
+            />
+            <h2>Entry form: The Planet is your Canvas 2022-2023</h2>
+          </div>
+
+          <div class="entry-wrapper">
+            <div class="select-wrap">
+              <div>
+                <img
+                  src="media/SVG/icons-categories.svg"
+                  alt="icons of categories: illustration, painting, photo, video"
+                  width="300px"
+                  height="auto"
+                />
               </div>
+              <select>
+                <option>SELECT YOUR CATEGORY</option>
+                <option value="dandp">Drawing and Painting</option>
+                <option value="illustration">Illustration</option>
+                <option value="photo">Photo</option>
+                <option value="video">Video</option>
+              </select>
+            </div>
+            <div class="dandp box">
+              <form
+                name="Photo-Entry"
+                enctype="multipart/form-data"
+                data-netlify="true"
+                class="entry-form"
+              >
+                <div class="form-heading">Participant data</div>
+
+                <div class="wrap-form">
+                  <label
+                    >Name: <input type="text" name="name" size="32"
+                  /></label>
+
+                  <label
+                    >Address: <input type="text" name="address" size="30"
+                  /></label>
+
+                  <label>Postcode: <input type="text" name="postcode" /></label>
+
+                  <label>City: <input type="text" name="city" /></label>
+
+                  <label>Town: <input type="text" name="town" /></label>
+
+                  <label
+                    >Email: <input type="email" name="email" size="30"
+                  /></label>
+
+                  <label>Phone: <input type="tel" name="phone" /></label>
+
+                  <label
+                    >ID or Passport number: <input type="text" name="id"
+                  /></label>
+
+                  <label
+                    >Date of birth: <input type="date" name="birthday"
+                  /></label>
+                </div>
+                <div class="form-heading">Data of art</div>
+
+                <div class="wrap-form">
+                  <label>
+                    <span>Title:</span>
+                    <input name="name" type="text" size="35" />
+                  </label>
+
+                  <label>
+                    <span>Upload file:</span>
+                    <input name="file" type="file" />
+                    <div class="form-texts">File must be less than 8MB</div>
+                  </label>
+
+                  <label>
+                    <span class="form-text"
+                      >I declare that the work has not received any prize in
+                      other competitions before, and I assign the rights to
+                      reproduce it. Likewise, I accept everything stipulated in
+                      the contest rules and the legal conditions of
+                      participation.</span
+                    >
+                    <input name="Declaration" type="checkbox" required />
+                  </label>
+
+                  <label>
+                    <span class="form-text"
+                      >I accept
+                      <a
+                        href="/media/T&Cs/TheplanetisyourcanvasT&Cs.pdf"
+                        attributes-list
+                        download
+                      >
+                        Terms and Conditions
+                      </a>
+                    </span>
+                    <input name="Declaration" type="checkbox" required />
+                  </label>
+                </div>
+                <div class="submit-box">
+                  <button class="submit">
+                    <img
+                      src="media/SVG/flecha-derecha.svg"
+                      alt="arrow pointing to the right"
+                      width="38px"
+                      height="17px"
+                    />Submit Artwork
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="illustration box">
+              You have selected <strong>illustration</strong> so i am here
+            </div>
+            <div class="photo box">
+              You have selected <strong>photo</strong> so i am here
+            </div>
+            <div class="video box">
+              You have selected <strong>video</strong> so i am here
             </div>
           </div>
         </section>
