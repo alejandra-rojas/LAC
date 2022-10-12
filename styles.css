@@ -533,6 +533,35 @@ label {
   font-size: 1.2rem;
 }
 
+/*RESOURCES*/
+
+.posters-wrapper {
+  display: flex;
+  overflow-x: auto;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+  align-items: center;
+  /* Sidescroll */
+  width: calc(100vw - var(--padding-x) * 2 - var(--the-music__grid-gap) * 2);
+  scroll-snap-align: center;
+}
+
+.posters-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.poster {
+  background-color: #33c5aa;
+  border: solid 2px white;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.poster img {
+  width: 100%;
+  display: block;
+}
+
 /* Footer */
 
 footer {
