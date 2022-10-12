@@ -10,7 +10,6 @@
   --blue: #546ca8;
   --yellow: #ddd666;
   --beige: white;
-  --darkblue: #3f51b5;
 }
 
 html,
@@ -268,7 +267,7 @@ h1 {
   justify-content: center;
   column-gap: 0.5rem;
   background-color: var(--green);
-  margin: 1rem 0;
+  margin: 1rem 0 2rem;
   padding: 0.3rem 0.5rem;
   width: fit-content;
 }
@@ -383,6 +382,9 @@ h5 {
   font-weight: 600;
 }
 
+#vote {
+  padding-bottom: 3rem;
+}
 .resources {
   display: flex;
   column-gap: 10px;
@@ -426,9 +428,8 @@ h5 {
 }
 
 .vote {
-  margin-top: 2rem;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   column-gap: 2rem;
 }
 
@@ -436,6 +437,67 @@ h5 {
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+/* Footer */
+
+footer {
+  background-color: white;
+  display: flex;
+}
+
+.footer-title {
+  color: #009fe2;
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.follow-text {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.copy {
+  color: var(--blue);
+}
+
+/*RESOURCES*/
+
+.hide-resource {
+  display: none;
+}
+
+.posters-wrapper {
+  display: flex;
+  overflow-x: auto;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+  align-items: center;
+  /* Sidescroll */
+  width: calc(100vw - var(--padding-x) * 2 - var(--the-music__grid-gap) * 2);
+  scroll-snap-align: center;
+  padding: 20px 0;
+}
+
+.posters-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.poster {
+  background-color: #33c5aa;
+  border: solid 2px white;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.poster img {
+  width: 100%;
+  display: block;
 }
 
 /* EntryForm */
@@ -447,6 +509,7 @@ h5 {
   flex-wrap: wrap;
   column-gap: 1rem;
   row-gap: 1rem;
+  padding-bottom: 20px;
 }
 
 select {
@@ -533,62 +596,6 @@ label {
   font-size: 1.2rem;
 }
 
-/*RESOURCES*/
-
-.posters-wrapper {
-  display: none;
-  overflow-x: auto;
-  column-gap: 0.5rem;
-  row-gap: 0.5rem;
-  align-items: center;
-  /* Sidescroll */
-  width: calc(100vw - var(--padding-x) * 2 - var(--the-music__grid-gap) * 2);
-  scroll-snap-align: center;
-}
-
-.posters-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-.poster {
-  background-color: #33c5aa;
-  border: solid 2px white;
-  min-width: 200px;
-  max-width: 300px;
-}
-
-.poster img {
-  width: 100%;
-  display: block;
-}
-
-/* Footer */
-
-footer {
-  background-color: white;
-  display: flex;
-}
-
-.footer-title {
-  color: #009fe2;
-}
-
-.social-media {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  column-gap: 0.5rem;
-}
-
-.follow-text {
-  color: var(--blue);
-  font-weight: 700;
-}
-
-.copy {
-  color: var(--blue);
-}
-
 /* Footer styles */
 
 .footer-title {
@@ -658,7 +665,7 @@ footer {
 
   .arrows-top {
     background-image: url(media/picos-mobile-verdes.png);
-    height: 23px;
+    height: 24px;
   }
 
   .arrows-bottom {
