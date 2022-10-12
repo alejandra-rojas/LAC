@@ -383,9 +383,6 @@ h5 {
   font-weight: 600;
 }
 
-#vote {
-  height: 500px;
-}
 .resources {
   display: flex;
   column-gap: 10px;
@@ -429,8 +426,9 @@ h5 {
 }
 
 .vote {
+  margin-top: 2rem;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   column-gap: 2rem;
 }
 
@@ -459,7 +457,7 @@ select {
   font-weight: 800;
   border: none;
   border-radius: 8px;
-  border: 3px solid #0958a3;
+  border: 2px solid #0958a3;
   appearance: none;
   background: #e8eaf6 url(media/SVG/rombo-dark-abajo.svg) no-repeat;
   background-position: 93% 50%;
