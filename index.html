@@ -502,7 +502,7 @@
 
             <div class="form-wrapper">
               <form
-                name="Photo-Entry"
+                name="Contest-Entry"
                 action="/success.html"
                 enctype="multipart/form-data"
                 data-netlify="true"
@@ -547,7 +547,7 @@
 
                       <label
                         >ID or Passport number:
-                        <input required type="text" name="id"
+                        <input required type="text" name="id-number"
                       /></label>
 
                       <label
@@ -596,7 +596,12 @@
                         >Title of the artwork explanation (max. 500 words)
                         including its originality and tools used for its
                         creation:
-                        <textarea name="message" required></textarea>
+                        <textarea
+                          name="message"
+                          maxlenght="500"
+                          rows="2"
+                          required
+                        ></textarea>
                       </label>
                     </div>
 
