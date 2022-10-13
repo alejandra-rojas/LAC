@@ -29,6 +29,7 @@ body {
 a,
 u {
   text-decoration: none;
+  color: #0958a3;
 }
 
 /* LANGUAGE DROPDOWN BUTTON */
@@ -448,10 +449,6 @@ footer {
 
 /*RESOURCES*/
 
-.resources-hidden {
-  display: ; /*change to flex*/
-}
-
 .posters-wrapper {
   display: flex;
   align-items: center;
@@ -476,6 +473,10 @@ footer {
 .poster img {
   width: 100%;
   display: block;
+}
+
+.form-text a:active {
+  color: #33c5aa;
 }
 
 /* EntryForm */
@@ -551,11 +552,6 @@ label {
 .form-text {
   font-size: 0.8rem;
   font-weight: 600;
-}
-
-a:link {
-  color: #0958a3;
-  font-weight: 500;
 }
 
 .submit-box {
@@ -793,7 +789,7 @@ footer {
   }
 
   .boxed-title img {
-    display: none;
+    display: block; /* none to remove images in titles */
   }
 
   .circle {
