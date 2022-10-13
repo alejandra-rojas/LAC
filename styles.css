@@ -274,6 +274,10 @@ h1 {
   width: fit-content;
 }
 
+.select-wrap .boxed-title {
+  margin: 0;
+}
+
 .move-right {
   margin-left: 1rem;
 }
@@ -317,7 +321,8 @@ section {
 }
 
 .participate-section {
-  padding-top: 4rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Each Stage styling */
@@ -479,16 +484,35 @@ footer {
   color: #33c5aa;
 }
 
+/* Decorative-Entry Elements */
+
+.decorativeentry-left,
+.decorativeentry-right {
+  display: none;
+}
+
+.decorativeentry-left-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.decorativeentry-right-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
 /* EntryForm */
 
 .select-wrap {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  column-gap: 1rem;
-  row-gap: 1rem;
-  padding-bottom: 20px;
+
+  padding: 4rem 0 1rem 0;
 }
 
 select {
@@ -504,7 +528,7 @@ select {
   background: #e8eaf6 url(media/SVG/rombo-dark-abajo.svg) no-repeat;
   background-position: 93% 50%;
   background-size: 15px;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 .content {
   display: none;
@@ -661,7 +685,7 @@ footer {
   }
 
   .padding-main-container {
-    padding: 2rem 3rem;
+    padding: 2rem 3rem 0;
   }
 
   footer {
@@ -828,7 +852,7 @@ footer {
   }
 
   .padding-main-container {
-    padding: 2rem;
+    padding: 2rem 2rem 0;
     margin: 0rem auto;
     display: flex;
     flex-direction: column;
@@ -877,6 +901,46 @@ footer {
 
   .resources-textcont img {
     display: none;
+  }
+
+  /* entry form */
+
+  .participate-section {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: space-around;
+  }
+
+  .section-nopadding {
+    padding-top: 1rem;
+  }
+
+  .select-wrap {
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0 1rem 0;
+  }
+
+  /* Decorative Entry Side   */
+
+  .decorativeentry-left-mobile,
+  .decorativeentry-right-mobile {
+    display: none;
+  }
+
+  .decorativeentry-left,
+  .decorativeentry-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .decorativeentry-right {
+    align-items: flex-end;
+  }
+
+  .column-decodesktop {
+    display: block;
   }
 
   /* FOOTER */
