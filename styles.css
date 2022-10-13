@@ -270,6 +270,7 @@ h1 {
   justify-content: center;
   column-gap: 0.5rem;
   background-color: var(--green);
+  background-image: url(media/concrete-wall.png);
   margin: 1rem 0 2rem;
   padding: 0.3rem 0.5rem;
   width: fit-content;
@@ -293,8 +294,8 @@ h3 {
   font-size: 1.7rem;
   font-weight: 700;
   text-transform: uppercase;
-  border-bottom: 3px solid var(--green);
-  color: var(--green);
+  border-bottom: 3px solid var(--beige);
+  color: var(--beige);
   padding: 0 0.5rem 0 0;
   margin: 1rem 0;
   width: fit-content;
@@ -340,8 +341,8 @@ section {
   border-radius: 50%;
   width: 35px;
   height: 35px;
-  border: 4px solid var(--green);
-  color: var(--green);
+  border: 4px solid var(--beige);
+  color: var(--beige);
   text-align: center;
   font-weight: 800;
   font-size: 1.4rem;
@@ -487,6 +488,12 @@ footer {
 
 /* Decorative-Entry Elements */
 
+.iconos-participate {
+  width: 300px;
+  height: auto;
+  margin-top: 1rem;
+}
+
 .decorativeentry-left,
 .decorativeentry-right {
   display: none;
@@ -566,12 +573,16 @@ select {
   display: none;
 }
 
-input {
-  size: 30;
+input,
+textarea {
   padding: 4px;
   border-radius: 5px;
   border: 0;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+textarea {
+  width: 100%;
 }
 
 .form-heading {
@@ -595,13 +606,21 @@ label {
 }
 
 .form-texts {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
 .form-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.form-problems {
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 500;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .submit-box {
@@ -713,6 +732,12 @@ footer {
 
   .padding-main-container {
     padding: 2rem 3rem 0;
+  }
+
+  .iconos-participate {
+    width: 400px;
+    height: auto;
+    margin-top: 1rem;
   }
 
   footer {
@@ -857,8 +882,8 @@ footer {
     border-radius: 50%;
     width: 37px;
     height: 37px;
-    border: 4px solid var(--green);
-    color: var(--green);
+    border: 4px solid var(--beige);
+    color: var(--beige);
     text-align: center;
     font-weight: 800;
     font-size: 1.6rem;
@@ -996,6 +1021,7 @@ footer {
 
   .form-part2 {
     width: 64%;
+    padding-bottom: 1rem;
   }
 
   .wrap-form {
@@ -1007,6 +1033,10 @@ footer {
   .form-part2b {
     display: flex;
     flex-direction: column;
+  }
+
+  textarea {
+    width: 100%;
   }
 
   /* FOOTER */
