@@ -239,6 +239,7 @@ main {
   font-size: 1.1rem;
   text-align: justify;
   font-weight: 900;
+  align-items: center;
 }
 
 .padding-main-container {
@@ -385,10 +386,8 @@ h5 {
 #vote {
   padding-bottom: 3rem;
 }
+
 .resources {
-  display: flex;
-  column-gap: 10px;
-  align-items: center;
 }
 
 .resourcesbtn {
@@ -401,6 +400,7 @@ h5 {
   border: 2px solid var(--green);
   position: relative;
   background-color: rgba(0, 0, 0, 0);
+  margin-bottom: 10px;
 }
 
 .resourcesbtn::after {
@@ -468,16 +468,18 @@ footer {
 
 /*RESOURCES*/
 
+.resources-hidden {
+  display: ; /*change to flex*/
+}
+
 .posters-wrapper {
-  display: none; /*change to flex*/
-  overflow-x: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 0 20px 0;
   column-gap: 0.5rem;
   row-gap: 0.5rem;
-  align-items: center;
+  overflow-x: auto;
   /* Sidescroll */
-  width: calc(100vw - var(--padding-x) * 2 - var(--the-music__grid-gap) * 2);
-  scroll-snap-align: center;
-  padding: 20px 0;
 }
 
 .posters-wrapper::-webkit-scrollbar {
@@ -569,6 +571,11 @@ label {
 .form-text {
   font-size: 0.8rem;
   font-weight: 600;
+}
+
+a:link {
+  color: #0958a3;
+  font-weight: 500;
 }
 
 .submit-box {
@@ -798,7 +805,11 @@ footer {
   /* MAIN */
 
   .intro {
-    padding: 3.5rem 0 1rem;
+    padding: 3.5rem 0 0;
+  }
+
+  section {
+    padding-top: 3rem;
   }
 
   .boxed-title img {
