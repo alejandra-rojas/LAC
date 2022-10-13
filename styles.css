@@ -375,7 +375,7 @@ h5 {
 .resources-textcont {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .resourcesbtn {
@@ -953,10 +953,6 @@ footer {
 
   h5 {
     font-size: 1rem;
-  }
-
-  .resources-textcont img {
-    display: none;
   }
 
   /* Decorative Entry Side   */
