@@ -315,31 +315,8 @@ section {
   padding-top: 2rem;
 }
 
-.bounce-animation {
-  animation: bounce 1.5s ease 1;
-}
-@keyframes bounce {
-  70% {
-    transform: translateY(0%);
-  }
-  80% {
-    transform: translateY(-15%);
-  }
-  90% {
-    transform: translateY(0%);
-  }
-  95% {
-    transform: translateY(-7%);
-  }
-  97% {
-    transform: translateY(0%);
-  }
-  99% {
-    transform: translateY(-3%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.participate-section {
+  padding-top: 4rem;
 }
 
 /* Each Stage styling */
@@ -387,7 +364,10 @@ h5 {
   padding-bottom: 3rem;
 }
 
-.resources {
+.resources-textcont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .resourcesbtn {
@@ -897,6 +877,10 @@ footer {
 
   h5 {
     font-size: 1rem;
+  }
+
+  .resources-textcont img {
+    display: none;
   }
 
   /* FOOTER */
