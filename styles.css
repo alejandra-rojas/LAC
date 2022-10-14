@@ -481,9 +481,6 @@ footer {
   /* Sidescroll */
 }
 
-.posters-wrapper::-webkit-scrollbar {
-}
-
 /* width */
 .posters-wrapper::-webkit-scrollbar {
   width: 5px;
@@ -571,12 +568,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.form-part1 {
-}
-
-.form-part2 {
 }
 
 .wrap-form {
