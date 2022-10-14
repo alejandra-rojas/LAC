@@ -505,7 +505,7 @@
 
             <div class="form-wrapper">
               <form
-                name="Contest-Entry"
+                name="ThePlanetIsYourCanvas-Entry"
                 action="/pages/success.html"
                 enctype="multipart/form-data"
                 data-netlify="true"
@@ -518,44 +518,43 @@
                     <div class="wrap-form">
                       <label
                         >Name:
-                        <input required type="text" name="name" size="40"
+                        <input required type="text" name="Name:" size="40"
                       /></label>
 
                       <label
                         >Address:
-                        <input required type="text" name="address" size="40"
+                        <input required type="text" name="Address:" size="40"
                       /></label>
 
                       <label
                         >Postcode:
-                        <input required type="text" name="postcode" size="10"
+                        <input required type="text" name="Postcode:" size="10"
                       /></label>
 
                       <label
-                        >City: <input required type="text" name="city"
+                        >City: <input required type="text" name="City:"
                       /></label>
 
                       <label
-                        >Country: <input required type="text" name="country"
+                        >Country: <input required type="text" name="Country:"
                       /></label>
 
                       <label
                         >Email:
-                        <input required type="email" name="email" size="30"
+                        <input required type="email" name="email:" size="30"
                       /></label>
 
                       <label
-                        >Phone: <input required type="text" name="phone"
+                        >Phone: <input required type="text" name="PhoneNumber:"
                       /></label>
 
                       <label
                         >ID or Passport number:
-                        <input required type="text" name="id-number"
+                        <input required type="text" name="idNumber:"
                       /></label>
 
                       <label
-                        >Date of birth:
-                        <input required type="date" name="birthday"
+                        >Date of birth: <input required type="date" name="DOB:"
                       /></label>
                     </div>
                   </div>
@@ -565,12 +564,17 @@
                     <div class="wrap-form">
                       <label>
                         <span>Title:</span>
-                        <input required name="name" type="text" size="40" />
+                        <input
+                          required
+                          name="ArtTitle:"
+                          type="text"
+                          size="40"
+                        />
                       </label>
 
                       <label
                         >Category:
-                        <select name="category" type="text" required>
+                        <select name="Category:" type="text" required>
                           <option value="">select one</option>
                           <option value="Drawing or Painting">
                             Drawing and Painting
@@ -583,12 +587,12 @@
 
                       <label>
                         <span>Creation Date:</span>
-                        <input required name="creation-date" type="date" />
+                        <input required name="Creation-Date:" type="date" />
                       </label>
 
                       <label>
                         <span>Upload file:</span>
-                        <input required name="file" type="file" />
+                        <input required name="FileUpload:" type="file" />
                         <div class="form-texts">File must be less than 8MB</div>
                       </label>
 
@@ -596,7 +600,7 @@
                         >Title of the artwork explanation, including its
                         originality and tools used for its creation:<br />
                         <textarea
-                          name="message"
+                          name="TitleExplanation:"
                           maxlength="2500"
                           rows="2"
                           columns="5"
