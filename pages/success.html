@@ -39,20 +39,22 @@
         flex-direction: column;
         background-color: white;
         border-radius: 8px;
-        padding: 0.5rem;
+        padding: 1rem;
         justify-content: center;
         width: fit-content;
         align-items: center;
       }
 
       .thanks {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         font-weight: 600;
         padding: 0;
       }
 
-      h2 {
+      .other-text {
         font-size: 1rem;
+        font-weight: 500;
+        padding-bottom: 0.5rem;
       }
 
       a,
@@ -60,8 +62,8 @@
         margin: 0;
         text-decoration: none;
         font-weight: 600;
+        font-size: 0.8rem;
         color: #009fe2;
-        padding-bottom: 0.5rem;
       }
 
       .logo-container {
@@ -73,6 +75,10 @@
       img.social-icons {
         width: 40px;
         height: auto;
+      }
+
+      .back {
+        align-self: flex-end;
       }
 
       @media screen and (min-width: 768px) {
@@ -97,7 +103,7 @@
           padding: 0;
         }
 
-        h2 {
+        .other-text {
           font-size: 1.2rem;
         }
       }
@@ -108,11 +114,13 @@
       <div class="container">
         <img src="img/Poster.jpg" width="220px" />
         <div class="thanks">Thank you!</div>
-        <h2>Your art submission has been received.</h2>
+        <div class="other-text">
+          Your art submission has been received. <br />
+          Follow us for competition updates:
+        </div>
+
         <div class="social-media">
-          <div class="follow-text">
-            <p>Follow us for competition updates:</p>
-          </div>
+          <div class="follow-text"></div>
           <div class="logo-container">
             <a
               href="https://www.facebook.com/profile.php?id=100086390746628"
@@ -133,6 +141,9 @@
                 class="social-icons"
             /></a>
           </div>
+        </div>
+        <div class="back">
+          <a href="theplanetisyourcanvas.com/en"><p>back to site</p></a>
         </div>
       </div>
     </div>
