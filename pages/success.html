@@ -13,7 +13,7 @@
     <title>Your entry has been submited!</title>
     <style>
       body {
-        background-color: #009fe2;
+        background-color: #0958a3;
         font-family: "Roboto", sans-serif;
         font-size: 16px;
         text-align: center;
@@ -33,19 +33,20 @@
       .container {
         position: relative;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         background-color: white;
         border-radius: 8px;
-        padding: 24px;
+        padding: 0.5rem;
         justify-content: center;
-        width: 75%;
-        max-width: 500px;
-        margin: auto auto;
+        width: fit-content;
         align-items: center;
       }
 
-      h1 {
-        font-size: 1.5rem;
+      .thanks {
+        font-size: 1.1rem;
+        font-weight: 600;
+        padding: 0;
       }
 
       h2 {
@@ -56,18 +57,35 @@
         margin: 0;
         text-decoration: none;
         font-weight: 600;
-        padding-top: 1rem;
         color: #009fe2;
+        padding-bottom: 0.5rem;
+      }
+
+      @media screen and (min-width: 768px) {
+        .container img {
+          width: 320px;
+          height: auto;
+        }
+
+        .thanks {
+          font-size: 1.5rem;
+          font-weight: 600;
+          padding: 0;
+        }
+
+        h2 {
+          font-size: 1.2rem;
+        }
       }
     </style>
   </head>
   <body>
     <div class="main">
       <div class="container">
-        <img src="media/pngs/logoWIcons.png" width="300px" height="auto" />
-        <h1>THANK YOU!</h1>
+        <img src="img/Poster.jpg" width="220px" />
+        <div class="thanks">Thank you!</div>
         <h2>Your art submission has been received.</h2>
-        <a href="/index.html">Back to site</a>
+        <a href="/index.html">back to the site</a>
       </div>
     </div>
   </body>
