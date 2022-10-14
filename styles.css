@@ -103,7 +103,6 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
-  transition: 0.2s;
   z-index: 1;
 }
 
@@ -188,14 +187,12 @@ nav .container ul li a {
 
 nav .container ul li a:hover {
   color: white;
-  transition: 0.5s;
 }
 
 nav .container ul li.active {
   text-decoration: 2px var(--beige);
   text-decoration-line: underline;
   text-underline-offset: 4px;
-  transition: 1s;
 }
 
 /* Decorative Elements */
@@ -365,7 +362,6 @@ h4 {
   text-decoration: 4px var(--beige) wavy;
   text-decoration-line: underline;
   text-underline-offset: 2px;
-  transition: 1s;
   line-height: 1.5rem;
   padding: 1rem 0;
 }
@@ -408,7 +404,6 @@ h5 {
   height: 100%;
   top: 6px;
   left: 6px;
-  transition: 0.2s;
 }
 
 .resourcesbtn:hover::after {
@@ -792,7 +787,6 @@ footer {
   .logo {
     height: 160px;
     width: 160px;
-    transition: 2s;
   }
 
   .twotiernav {
