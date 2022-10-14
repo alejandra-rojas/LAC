@@ -1,11 +1,11 @@
 User-agent: Googlebot
-Disallow: /esp/
+Disallow: /media/
+Disallow: /pages/
 
 User-agent: *
 Allow: /
 Disallow: /media/
+Disallow: /pages/
 
 User-agent: Googlebot-Image
 Disallow: /
-
-Sitemap: http://www.example.com/sitemap.xml
