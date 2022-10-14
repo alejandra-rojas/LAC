@@ -966,6 +966,14 @@ footer {
     font-size: 1rem;
   }
 
+  .resources-textcont img {
+    display: none;
+  }
+
+  .posters-wrapper::-webkit-scrollbar {
+    display: block;
+  }
+
   /* Decorative Entry Side   */
 
   .deco-entry {
