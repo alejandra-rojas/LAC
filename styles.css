@@ -327,6 +327,11 @@ section {
   padding-top: 2rem;
 }
 
+.dottedline {
+  border-bottom: dotted 10px white;
+  padding-top: 3rem;
+}
+
 .participate-section {
   display: flex;
   justify-content: space-around;
@@ -746,7 +751,7 @@ footer {
   }
 
   .iconos-participate {
-    width: 400px;
+    width: 500px;
     height: auto;
     margin-top: 1rem;
   }
@@ -1003,7 +1008,7 @@ footer {
   .select-wrap {
     justify-content: center;
     align-items: center;
-    padding: 3rem 0 1rem 0;
+    padding: 2rem 0 2rem 0;
     row-gap: 0.5rem;
   }
 
