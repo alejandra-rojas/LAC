@@ -377,10 +377,6 @@ h5 {
   font-weight: 600;
 }
 
-#vote {
-  padding-bottom: 3rem;
-}
-
 .resources-textcont {
   display: flex;
   justify-content: space-between;
@@ -421,6 +417,10 @@ h5 {
   font-size: 1.5rem;
   font-weight: 700;
   color: white;
+}
+
+section.vote {
+  margin-bottom: 4rem;
 }
 
 .vote {
@@ -475,7 +475,26 @@ footer {
 }
 
 .posters-wrapper::-webkit-scrollbar {
-  display: none;
+}
+
+/* width */
+.posters-wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.posters-wrapper::-webkit-scrollbar-track {
+  background: var(--yellow);
+}
+
+/* Handle */
+.posters-wrapper::-webkit-scrollbar-thumb {
+  background: #c0b547;
+}
+
+/* Handle on hover */
+.posters-wrapper::-webkit-scrollbar-thumb:hover {
+  background: var(--light-blue);
 }
 
 .poster {
@@ -620,13 +639,14 @@ label {
 
 .form-text {
   font-size: 0.9rem;
+  padding-top: 0.9rem;
   font-weight: 500;
 }
 
 .form-problems {
   font-size: 0.8rem;
   font-weight: 500;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
 }
@@ -735,6 +755,7 @@ footer {
   .intro {
     padding: 2rem 0 1rem 0;
     font-size: 2rem;
+    line-height: 2.4rem;
     column-gap: 1.5rem;
   }
 
@@ -968,10 +989,6 @@ footer {
 
   .resources-textcont img {
     display: none;
-  }
-
-  .posters-wrapper::-webkit-scrollbar {
-    display: block;
   }
 
   /* Decorative Entry Side   */

@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="Media/favicon_io/favicon.ico" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -53,7 +55,8 @@
         font-size: 1rem;
       }
 
-      a {
+      a,
+      p {
         margin: 0;
         text-decoration: none;
         font-weight: 600;
@@ -61,9 +64,30 @@
         padding-bottom: 0.5rem;
       }
 
+      .logo-container {
+        display: flex;
+        justify-content: center;
+        column-gap: 1rem;
+      }
+
+      img.social-icons {
+        width: 40px;
+        height: auto;
+      }
+
       @media screen and (min-width: 768px) {
         .container img {
           width: 320px;
+          height: auto;
+        }
+
+        img.social-icons {
+          width: 40px;
+          height: auto;
+        }
+
+        .follow-text img {
+          width: 30px;
           height: auto;
         }
 
@@ -85,7 +109,31 @@
         <img src="img/Poster.jpg" width="220px" />
         <div class="thanks">Thank you!</div>
         <h2>Your art submission has been received.</h2>
-        <a href="/index.html">back to the site</a>
+        <div class="social-media">
+          <div class="follow-text">
+            <p>Follow us for competition updates:</p>
+          </div>
+          <div class="logo-container">
+            <a
+              href="https://www.facebook.com/profile.php?id=100086390746628"
+              target="_blank"
+              ><img
+                src="img/icon-facebook.svg"
+                srcset="img/icon-facebook.svg"
+                alt="Facebook logo"
+                class="social-icons"
+            /></a>
+            <a
+              href="https://www.instagram.com/theplanetisyourcanvas/"
+              target="_blank"
+              ><img
+                src="img/icon-instagram.svg"
+                srcset="img/icon-instagram.svg"
+                alt="Instagram logo"
+                class="social-icons"
+            /></a>
+          </div>
+        </div>
       </div>
     </div>
   </body>
