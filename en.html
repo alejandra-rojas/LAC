@@ -20,30 +20,12 @@
       type="text/javascript"
       src="https://identity.netlify.com/v1/netlify-identity-widget.js"
     ></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("select")
-          .change(function () {
-            $(this)
-              .find("option:selected")
-              .each(function () {
-                var optionValue = $(this).attr("value");
-                if (optionValue) {
-                  $(".box")
-                    .not("." + optionValue)
-                    .hide();
-                  $("." + optionValue).show();
-                } else {
-                  $(".box").hide();
-                }
-              });
-          })
-          .change();
-      });
-    </script>
 
     <title>The planet is your canvas!</title>
+    <meta
+      name="description"
+      content="The planet is your canvas!  Art competition."
+    />
   </head>
   <!-- Write your comments here -->
   <body>
