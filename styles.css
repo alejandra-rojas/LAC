@@ -641,10 +641,11 @@ label {
 }
 
 .form-problems {
-  font-size: 0.8rem;
+  background-color: #0958a3;
+  color: white;
+  font-size: 0.9rem;
   font-weight: 500;
-  width: 90%;
-  margin: 0 auto;
+  padding: 0.4rem 0;
   text-align: center;
 }
 
@@ -955,10 +956,11 @@ footer {
 
   .stages-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     row-gap: 1rem;
     column-gap: 1rem;
+    padding-bottom: 2rem;
   }
 
   .stages-single-container {
