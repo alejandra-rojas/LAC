@@ -489,16 +489,19 @@ footer {
 /* Track */
 .posters-wrapper::-webkit-scrollbar-track {
   background: var(--yellow);
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
 }
 
 /* Handle */
 .posters-wrapper::-webkit-scrollbar-thumb {
-  background: #c0b547;
+  background: var(--light-blue);
+  border-radius: 10px;
 }
 
 /* Handle on hover */
 .posters-wrapper::-webkit-scrollbar-thumb:hover {
-  background: var(--light-blue);
+  background: #37c6aa;
 }
 
 .poster {
