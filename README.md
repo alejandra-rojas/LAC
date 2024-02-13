@@ -1,4 +1,4 @@
-# The planet is your canvas - 1st stage website. 
+# The planet is your canvas - 1st stage static website
 
 Informative and responsive website which served as a promotional platform for the contest 'The planet is your canvas 2002-2003' organized by the UN Environment program in LATAM. 
 
